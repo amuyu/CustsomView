@@ -10,12 +10,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.app.ActionBar;
 import android.view.MenuItem;
 
-/**
- * An activity representing a single Item detail screen. This
- * activity is only used on narrow width devices. On tablet-size devices,
- * item details are presented side-by-side with a list of items
- * in a {@link ItemListActivity}.
- */
+import com.amuyu.customview.model.ViewList;
+import com.amuyu.customview.util.ActivityUtils;
+
+
 public class ItemDetailActivity extends AppCompatActivity {
 
     @Override
@@ -53,13 +51,11 @@ public class ItemDetailActivity extends AppCompatActivity {
             // Create the detail fragment and add it to the activity
             // using a fragment transaction.
             Bundle arguments = new Bundle();
-            arguments.putString(ItemDetailFragment.ARG_ITEM_ID,
-                    getIntent().getStringExtra(ItemDetailFragment.ARG_ITEM_ID));
-            ItemDetailFragment fragment = new ItemDetailFragment();
-            fragment.setArguments(arguments);
-            getSupportFragmentManager().beginTransaction()
-                    .add(R.id.item_detail_container, fragment)
-                    .commit();
+            String id = getIntent().getStringExtra(ItemDetailFragment.ARG_ITEM_ID);
+            ViewList.Item item = ViewList.getItem(id);
+            ActivityUtils.addFragmentToActivity(getSupportFragmentManager(),
+                            ActivityUtils.getFragmentByClassName(item.className),
+                            R.id.item_detail_container);
         }
     }
 
