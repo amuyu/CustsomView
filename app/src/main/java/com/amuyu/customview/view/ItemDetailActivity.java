@@ -10,7 +10,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
 
-import com.amuyu.customview.ItemListActivity;
+
 import com.amuyu.customview.R;
 import com.amuyu.customview.model.ViewList;
 import com.amuyu.customview.util.ActivityUtils;
