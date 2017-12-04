@@ -1,4 +1,4 @@
-package com.amuyu.customview;
+package com.amuyu.customview.view.button;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -7,7 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.amuyu.customview.view.button.SimpleStateButton;
+import com.amuyu.customview.R;
 
 
 public class StateButtonFragment extends Fragment {

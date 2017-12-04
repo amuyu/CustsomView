@@ -1,20 +1,24 @@
-package com.amuyu.customview;
+package com.amuyu.customview.view;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
-import android.support.v7.widget.Toolbar;
-import android.view.View;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.app.ActionBar;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+import android.view.View;
 
+import com.amuyu.customview.ItemListActivity;
+import com.amuyu.customview.R;
 import com.amuyu.customview.model.ViewList;
 import com.amuyu.customview.util.ActivityUtils;
 
 
 public class ItemDetailActivity extends AppCompatActivity {
+
+    public static final String ARG_ITEM_ID = "item_id";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,7 +55,7 @@ public class ItemDetailActivity extends AppCompatActivity {
             // Create the detail fragment and add it to the activity
             // using a fragment transaction.
             Bundle arguments = new Bundle();
-            String id = getIntent().getStringExtra(ItemDetailFragment.ARG_ITEM_ID);
+            String id = getIntent().getStringExtra(ItemDetailActivity.ARG_ITEM_ID);
             ViewList.Item item = ViewList.getItem(id);
             ActivityUtils.addFragmentToActivity(getSupportFragmentManager(),
                             ActivityUtils.getFragmentByClassName(item.className),

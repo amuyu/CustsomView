@@ -1,6 +1,6 @@
 package com.amuyu.customview.model;
 
-import com.amuyu.customview.StateButtonFragment;
+import com.amuyu.customview.view.button.StateButtonFragment;
 
 import java.util.ArrayList;
 import java.util.HashMap;

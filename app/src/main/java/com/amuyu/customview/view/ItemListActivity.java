@@ -1,4 +1,4 @@
-package com.amuyu.customview;
+package com.amuyu.customview.view;
 
 import android.content.Context;
 import android.content.Intent;
@@ -15,6 +15,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.amuyu.customview.R;
 import com.amuyu.customview.model.ViewList;
 import com.amuyu.customview.util.ActivityUtils;
 
@@ -79,7 +80,7 @@ public class ItemListActivity extends AppCompatActivity {
 
                     Context context = view.getContext();
                     Intent intent = new Intent(context, ItemDetailActivity.class);
-                    intent.putExtra(ItemDetailFragment.ARG_ITEM_ID, item.id);
+                    intent.putExtra(ItemDetailActivity.ARG_ITEM_ID, item.id);
                     context.startActivity(intent);
                 }
             }
