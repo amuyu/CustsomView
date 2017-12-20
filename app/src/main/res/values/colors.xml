@@ -14,4 +14,7 @@
     <color name="cpb_green">#ff99cc00</color>
     <color name="cpb_green_dark">#ff6d9b00</color>
     <color name="cpb_white">@android:color/white</color>
+
+    <drawable name="item_normal">@android:color/white</drawable>
+    <drawable name="item_pressed">#ffdedede</drawable>
 </resources>
