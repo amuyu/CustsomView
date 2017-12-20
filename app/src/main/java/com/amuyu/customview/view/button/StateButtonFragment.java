@@ -15,7 +15,7 @@ public class StateButtonFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.state_button, container, false);
+        View view = inflater.inflate(R.layout.state_button_frag, container, false);
 
         final SimpleStateButton button = (SimpleStateButton)view.findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {

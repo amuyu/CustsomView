@@ -1,6 +1,7 @@
 package com.amuyu.customview.model;
 
 import com.amuyu.customview.view.button.StateButtonFragment;
+import com.amuyu.customview.view.wheel.WheelFragment;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -18,6 +19,7 @@ public class ViewList {
     static {
 
         addItem(createItem("StateButton",  "Button that changes style when clicked", StateButtonFragment.class.getName()));
+        addItem(createItem("Wheel",  "Wheel that use fling animation", WheelFragment.class.getName()));
 
     }
 

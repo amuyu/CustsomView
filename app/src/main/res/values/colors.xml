@@ -6,7 +6,9 @@
 
     <color name="cpb_grey">#ffdedede</color>
     <color name="cpb_blue">#ff0099cc</color>
-    <color name="cpb_blue_dark">#ff00719b</color>
+    <color name="cpb_blue_dark_1">#ff00719b</color>
+    <color name="cpb_blue_dark_2">#ff00698f</color>
+    <color name="cpb_blue_dark_3">#ff014964</color>
     <color name="cpb_red">#ffff4444</color>
     <color name="cpb_red_dark">#ffcd3a3a</color>
     <color name="cpb_green">#ff99cc00</color>
